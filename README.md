@@ -39,3 +39,13 @@ $ poetry shell
 ```
 
 To deactivate the virtual environment and exit this new shell type `exit`
+
+If you use a tool like pyenv to manage different Python versions, you can set the experimental virtualenvs.prefer-active-python option to true. Poetry will then try to find the current python of your shell.
+
+For instance, if your project requires a newer Python than is available with your system, a standard workflow would be:
+
+```
+$ pyenv install 3.9.8
+$ pyenv local 3.9.8  # Activate Python 3.9 for the current project
+$ poetry install
+```
