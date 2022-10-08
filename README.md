@@ -50,13 +50,13 @@ $ pyenv local 3.9.8  # Activate Python 3.9 for the current project
 $ poetry install
 ```
 
-To feeze only requirements
+To feeze only requirements:
 
 ```
 $ poetry export --without-hashes --format=requirements.txt > requirements.txt
 ```
 
-To feeze only dev requirements
+To feeze only dev requirements:
 
 ```
 $ poetry export --only dev --without-hashes --format=requirements.txt > requirements_dev.txt
